@@ -3,7 +3,7 @@ export const siteConfig = {
   tagline: "Government Financial Transparency Platform",
   description:
     "Empower citizens with access to your budget, spending, and financial data. Built for transparency, designed for clarity.",
-  demoUrl: "https://paradise-city-dashboard.vercel.app/paradise-city",
+  demoUrl: "https://sample-gov.civiportal.com/paradise",
   contactEmail: "hello@civiportal.com",
   features: [
     {

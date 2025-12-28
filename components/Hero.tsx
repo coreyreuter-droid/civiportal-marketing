@@ -41,7 +41,7 @@ export function Hero() {
               Request a Demo
             </Button>
             <Button href={siteConfig.demoUrl} variant="outline" size="lg">
-              View Sample
+              View Sample Site
             </Button>
           </div>
 
