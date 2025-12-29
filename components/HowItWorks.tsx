@@ -97,13 +97,13 @@ export function HowItWorks() {
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <Link
                 href={siteConfig.demoUrl}
-                className="inline-flex justify-center items-center rounded-lg px-4 py-2 border border-slate-300 text-slate-900 hover:bg-slate-50 transition-colors"
+                className="inline-flex justify-center items-center rounded-lg px-4 py-2 border-2 border-accent-600 text-accent-600 hover:bg-accent-50 transition-colors font-semibold"
               >
                 View sample portal
               </Link>
               <Link
-                href="/contact"
-                className="inline-flex justify-center items-center rounded-lg px-4 py-2 bg-accent-600 text-white hover:bg-accent-700 transition-colors"
+                href="/demo-request"
+                className="inline-flex justify-center items-center rounded-lg px-4 py-2 bg-accent-600 text-white hover:bg-accent-700 transition-colors font-semibold"
               >
                 Book a demo
               </Link>

@@ -12,6 +12,18 @@ export const metadata: Metadata = {
     ],
     apple: [{ url: "/brand/logo-mark.png", type: "image/png" }],
   },
+  openGraph: {
+    title: `${siteConfig.name} - ${siteConfig.tagline}`,
+    description: siteConfig.description,
+    url: "https://www.civiportal.com",
+    siteName: siteConfig.name,
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: `${siteConfig.name} - ${siteConfig.tagline}`,
+    description: siteConfig.description,
+  },
 };
 
 export default function RootLayout({

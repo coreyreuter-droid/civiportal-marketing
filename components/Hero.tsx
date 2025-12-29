@@ -38,7 +38,7 @@ export function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button href="/contact" size="lg">
+            <Button href="/demo-request" size="lg">
               Book a 30-minute demo
             </Button>
 

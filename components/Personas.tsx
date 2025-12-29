@@ -28,7 +28,7 @@ export function Personas() {
 
           <div className="bg-slate-50 rounded-xl p-8 border border-slate-200">
             <h3 className="text-xl font-semibold text-slate-900 mb-3">
-              City Manager / Leadership
+              Executive Leadership
             </h3>
             <ul className="space-y-3 text-slate-700">
               <li>• A single public place for financial context</li>

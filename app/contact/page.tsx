@@ -41,11 +41,7 @@ export default function ContactPage() {
                   <Button href={siteConfig.demoUrl} variant="outline">
                     View sample portal
                   </Button>
-                  <Button
-                    href="/demo-request"
-                    variant="secondary"
-                    className="bg-white text-accent-600 hover:bg-slate-100"
-                  >
+                  <Button href="/demo-request">
                     Book a demo
                   </Button>
                 </div>

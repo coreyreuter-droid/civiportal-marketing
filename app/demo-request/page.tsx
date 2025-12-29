@@ -102,20 +102,17 @@ export default function DemoRequestPage() {
             </p>
           </div>
 
-          <div className="bg-white rounded-xl shadow-sm p-6 mb-6 border border-slate-200">
+          <div className="bg-white rounded-xl shadow-sm p-6 mb-6 border border-slate-200 text-center">
             <h2 className="text-lg font-semibold text-slate-900 mb-2">
-              Email to schedule
+              Prefer email?
             </h2>
             <p className="text-slate-600 mb-4">
-              Email us to schedule a walkthrough. If you prefer, you can also
-              submit the form below and we’ll follow up.
+              Reach us at <a href={`mailto:${siteConfig.contactEmail}`} className="text-accent-600 hover:text-accent-700 font-medium">{siteConfig.contactEmail}</a>, or
+              fill out the form below.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Button href="/contact" variant="outline">
-                Book demo
-              </Button>
-              <Button href={siteConfig.demoUrl}>View the sample portal first</Button>
-            </div>
+            <Button href={siteConfig.demoUrl} variant="outline">
+              View the sample portal first
+            </Button>
           </div>
 
           <form
@@ -211,6 +208,7 @@ export default function DemoRequestPage() {
               >
                 <option value="">Select your role</option>
                 <option value="City Manager">City Manager</option>
+                <option value="County Administrator">County Administrator</option>
                 <option value="Finance Director">Finance Director</option>
                 <option value="Budget Analyst">Budget Analyst</option>
                 <option value="IT Director">IT Director</option>

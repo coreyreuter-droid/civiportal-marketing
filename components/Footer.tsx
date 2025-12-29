@@ -29,7 +29,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="#features"
+                  href="/#features"
                   className="hover:text-white transition-colors"
                 >
                   Features
@@ -37,7 +37,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="#benefits"
+                  href="/#benefits"
                   className="hover:text-white transition-colors"
                 >
                   Benefits
@@ -45,7 +45,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="#screenshots"
+                  href="/#screenshots"
                   className="hover:text-white transition-colors"
                 >
                   Screenshots

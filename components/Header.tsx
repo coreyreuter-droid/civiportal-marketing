@@ -51,7 +51,7 @@ export function Header() {
             <Button href={siteConfig.demoUrl} variant="outline" size="sm">
               View sample portal
             </Button>
-            <Button href="/contact" size="sm">
+            <Button href="/demo-request" size="sm">
               Request a demo
             </Button>
 
@@ -115,7 +115,7 @@ export function Header() {
                   View sample portal
                 </Button>
                 <Button
-                  href="/contact"
+                  href="/demo-request"
                   size="sm"
                   onClick={() => setMobileMenuOpen(false)}
                 >
