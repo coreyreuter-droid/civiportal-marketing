@@ -49,7 +49,9 @@ export default function DemoRequestPage() {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -92,7 +94,7 @@ export default function DemoRequestPage() {
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Book a Demo
+              Request a Demo
             </h1>
             <p className="text-lg text-slate-600">
               See a live portal, the admin upload flow, and how your exports map
@@ -102,15 +104,15 @@ export default function DemoRequestPage() {
 
           <div className="bg-white rounded-xl shadow-sm p-6 mb-6 border border-slate-200">
             <h2 className="text-lg font-semibold text-slate-900 mb-2">
-              Fastest option: book a 20-minute walkthrough
+              Email to schedule
             </h2>
             <p className="text-slate-600 mb-4">
-              Want to move quickly? Use the link below. If you prefer email, you
-              can also submit the form and we’ll follow up.
+              Email us to schedule a walkthrough. If you prefer, you can also
+              submit the form below and we’ll follow up.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Button href={siteConfig.schedulingUrl} variant="outline">
-                Schedule via email/calendar
+                Email to schedule
               </Button>
               <Button href={siteConfig.demoUrl}>View the sample portal first</Button>
             </div>

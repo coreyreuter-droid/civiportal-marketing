@@ -51,9 +51,10 @@ export function Header() {
             <Button href={siteConfig.demoUrl} variant="outline" size="sm">
               View sample portal
             </Button>
-            <Button href="/demo-request" size="sm">
-              Book demo
-            </Button>
+<Button href={siteConfig.schedulingUrl} size="sm">
+  Email to schedule
+</Button>
+
           </div>
 
           {/* Mobile Menu Button */}
@@ -113,13 +114,14 @@ export function Header() {
                 >
                   View sample portal
                 </Button>
-                <Button
-                  href="/demo-request"
-                  size="sm"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Book demo
-                </Button>
+<Button
+  href={siteConfig.schedulingUrl}
+  size="sm"
+  onClick={() => setMobileMenuOpen(false)}
+>
+  Email to schedule
+</Button>
+
               </div>
             </div>
           </div>

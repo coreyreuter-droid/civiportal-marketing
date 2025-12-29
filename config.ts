@@ -67,6 +67,14 @@ export const siteConfig = {
     },
   ],
   screenshots: [
+   {
+  src: "/screenshots/home.png",
+  alt: "Citizen portal home page showing navigation and overview content",
+  title: "Portal Home",
+  description:
+    "The citizen landing page—clear navigation into budgets, spending, departments, and revenue.",
+},
+
     {
       src: "/screenshots/overview.png",
       alt: "Overview dashboard showing high-level financial transparency metrics",
