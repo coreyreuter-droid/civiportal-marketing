@@ -2,7 +2,9 @@ import {
   Header,
   Footer,
   Hero,
+  Personas,
   Features,
+  HowItWorks,
   Benefits,
   Screenshots,
   CTA,
@@ -14,7 +16,9 @@ export default function HomePage() {
       <Header />
       <main>
         <Hero />
+        <Personas />
         <Features />
+        <HowItWorks />
         <Benefits />
         <Screenshots />
         <CTA />

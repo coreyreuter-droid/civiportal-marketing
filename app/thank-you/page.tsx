@@ -15,6 +15,7 @@ export default function ThankYouPage() {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
+              aria-hidden="true"
             >
               <path
                 strokeLinecap="round"
@@ -30,18 +31,18 @@ export default function ThankYouPage() {
           </h1>
 
           <p className="text-lg text-slate-600 mb-8">
-            We&apos;ve received your request and will be in touch within 1-2
-            business days.
+            We&apos;ve received your request and will be in touch shortly (often
+            same day).
           </p>
 
           <p className="text-slate-500 mb-8">
-            In the meantime, feel free to explore our sample dashboard to see
+            In the meantime, feel free to explore our sample portal to see
             CiviPortal in action.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href={siteConfig.demoUrl} variant="primary">
-              View Sample Dashboard
+              View sample portal
             </Button>
             <Button href="/" variant="secondary">
               Back to Home
@@ -50,12 +51,12 @@ export default function ThankYouPage() {
 
           <p className="mt-8 text-sm text-slate-500">
             Questions? Contact us at{" "}
-            <Link
+            <a
               href={`mailto:${siteConfig.contactEmail}`}
               className="text-accent-600 hover:text-accent-700 hover:underline"
             >
               {siteConfig.contactEmail}
-            </Link>
+            </a>
           </p>
         </div>
       </main>

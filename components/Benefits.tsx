@@ -1,4 +1,36 @@
+import Link from "next/link";
 import { siteConfig } from "@/config";
+
+const highlightItems = [
+  {
+    title: "Accessible by design",
+    description:
+      "Targeting WCAG 2.1 AA with keyboard navigation and screen reader-friendly structure.",
+    href: "/accessibility",
+    cta: "Read accessibility statement",
+  },
+  {
+    title: "Admin controls that fit finance workflows",
+    description:
+      "Replace-year uploads, module toggles, and guardrails designed for non-technical staff.",
+    href: "/#how-it-works",
+    cta: "See how it works",
+  },
+  {
+    title: "Security-minded architecture",
+    description:
+      "Designed for role-based access, auditability, and responsible handling of public financial data.",
+    href: "/security",
+    cta: "Security & data overview",
+  },
+  {
+    title: "Implementation without custom dev",
+    description:
+      "Export → upload → publish. Keep your portal current without standing up a bespoke website.",
+    href: "/demo-request",
+    cta: "Book a demo",
+  },
+];
 
 export function Benefits() {
   return (
@@ -7,65 +39,50 @@ export function Benefits() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-            Why Choose CiviPortal?
+            What this helps you do
           </h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            Built for forward-thinking governments ready to publish financial data clearly.
+            Practical outcomes for finance teams, leadership, and the public—
+            without marketing fluff.
           </p>
         </div>
 
         {/* Benefits Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {siteConfig.benefits.map((benefit, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200"
+              className="bg-white rounded-xl p-8 border border-slate-200"
             >
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-10 h-10 bg-accent-100 rounded-full flex items-center justify-center">
-                  <svg
-                    className="w-5 h-5 text-accent-600"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-slate-900 mb-2">
-                    {benefit.title}
-                  </h3>
-                  <p className="text-slate-600">{benefit.description}</p>
-                </div>
-              </div>
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                {benefit.title}
+              </h3>
+              <p className="text-slate-600 leading-relaxed">
+                {benefit.description}
+              </p>
             </div>
           ))}
         </div>
 
-        {/* Stats */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
-          <div className="text-center">
-            <div className="text-4xl font-bold text-accent-600 mb-2">100%</div>
-            <div className="text-slate-600">Data Transparency</div>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold text-accent-600 mb-2">24/7</div>
-            <div className="text-slate-600">Public Access</div>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold text-accent-600 mb-2">Easy</div>
-            <div className="text-slate-600">Setup Process</div>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold text-accent-600 mb-2">
-              Secure
+        {/* Highlights (replaces the old fake stats) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {highlightItems.map((item) => (
+            <div
+              key={item.title}
+              className="bg-white rounded-xl p-6 border border-slate-200 flex flex-col"
+            >
+              <p className="font-semibold text-slate-900 mb-2">{item.title}</p>
+              <p className="text-sm text-slate-600 leading-relaxed flex-1">
+                {item.description}
+              </p>
+              <Link
+                href={item.href}
+                className="mt-4 text-sm font-medium text-accent-700 hover:text-accent-800"
+              >
+                {item.cta} →
+              </Link>
             </div>
-            <div className="text-slate-600">Data Handling</div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

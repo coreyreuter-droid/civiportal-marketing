@@ -13,6 +13,7 @@ export function Hero() {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
+              aria-hidden="true"
             >
               <path
                 strokeLinecap="round"
@@ -21,13 +22,13 @@ export function Hero() {
                 d="M13 10V3L4 14h7v7l9-11h-7z"
               />
             </svg>
-            Empowering Government Transparency
+            Built for public-sector finance teams
           </div>
 
           {/* Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
-            Government Financial
-            <span className="text-accent-600"> Transparency</span> Made Simple
+            Publish financial data the public can{" "}
+            <span className="text-accent-600">actually understand</span>
           </h1>
 
           {/* Subheadline */}
@@ -38,20 +39,21 @@ export function Hero() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/demo-request" size="lg">
-              Request a Demo
+              Book a 20-minute demo
             </Button>
             <Button href={siteConfig.demoUrl} variant="outline" size="lg">
-              View Sample Site
+              View live sample portal
             </Button>
           </div>
 
           {/* Trust Indicators */}
-          <div className="mt-12 flex flex-wrap justify-center items-center gap-8 text-slate-500">
+          <div className="mt-12 flex flex-wrap justify-center items-center gap-8 text-slate-600">
             <div className="flex items-center gap-2">
               <svg
-                className="w-5 h-5 text-green-500"
+                className="w-5 h-5 text-green-600"
                 fill="currentColor"
                 viewBox="0 0 20 20"
+                aria-hidden="true"
               >
                 <path
                   fillRule="evenodd"
@@ -59,13 +61,15 @@ export function Hero() {
                   clipRule="evenodd"
                 />
               </svg>
-              <span className="text-sm font-medium">WCAG 2.1 Compliant</span>
+              <span className="text-sm font-medium">WCAG 2.1 AA target</span>
             </div>
+
             <div className="flex items-center gap-2">
               <svg
-                className="w-5 h-5 text-green-500"
+                className="w-5 h-5 text-green-600"
                 fill="currentColor"
                 viewBox="0 0 20 20"
+                aria-hidden="true"
               >
                 <path
                   fillRule="evenodd"
@@ -73,13 +77,15 @@ export function Hero() {
                   clipRule="evenodd"
                 />
               </svg>
-              <span className="text-sm font-medium">Secure & Private</span>
+              <span className="text-sm font-medium">Role-based admin access</span>
             </div>
+
             <div className="flex items-center gap-2">
               <svg
-                className="w-5 h-5 text-green-500"
+                className="w-5 h-5 text-green-600"
                 fill="currentColor"
                 viewBox="0 0 20 20"
+                aria-hidden="true"
               >
                 <path
                   fillRule="evenodd"
@@ -87,7 +93,23 @@ export function Hero() {
                   clipRule="evenodd"
                 />
               </svg>
-              <span className="text-sm font-medium">Easy Setup</span>
+              <span className="text-sm font-medium">Replace-year uploads</span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <svg
+                className="w-5 h-5 text-green-600"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                aria-hidden="true"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              <span className="text-sm font-medium">Hosted &amp; maintained</span>
             </div>
           </div>
         </div>

@@ -5,6 +5,13 @@ import { siteConfig } from "@/config";
 export const metadata: Metadata = {
   title: `${siteConfig.name} - ${siteConfig.tagline}`,
   description: siteConfig.description,
+  icons: {
+    icon: [
+      { url: "/brand/logo-mark.png", type: "image/png" },
+      { url: "/favicon.ico" },
+    ],
+    apple: [{ url: "/brand/logo-mark.png", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({

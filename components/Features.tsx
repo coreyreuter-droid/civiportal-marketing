@@ -7,6 +7,7 @@ const iconMap: Record<string, React.ReactNode> = {
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
+      aria-hidden="true"
     >
       <path
         strokeLinecap="round"
@@ -22,6 +23,7 @@ const iconMap: Record<string, React.ReactNode> = {
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
+      aria-hidden="true"
     >
       <path
         strokeLinecap="round"
@@ -37,12 +39,13 @@ const iconMap: Record<string, React.ReactNode> = {
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
+      aria-hidden="true"
     >
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}
-        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m4 0v-4a2 2 0 00-2-2h-4a2 2 0 00-2 2v4m6 0h2"
       />
     </svg>
   ),
@@ -52,6 +55,7 @@ const iconMap: Record<string, React.ReactNode> = {
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
+      aria-hidden="true"
     >
       <path
         strokeLinecap="round"
@@ -67,6 +71,7 @@ const iconMap: Record<string, React.ReactNode> = {
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
+      aria-hidden="true"
     >
       <path
         strokeLinecap="round"
@@ -82,12 +87,13 @@ const iconMap: Record<string, React.ReactNode> = {
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
+      aria-hidden="true"
     >
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}
-        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"
+        d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5-5m0 0l5 5m-5-5v12"
       />
     </svg>
   ),
@@ -100,11 +106,11 @@ export function Features() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-            Everything You Need for Financial Transparency
+            Product
           </h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            Powerful tools designed specifically for governments to
-            share financial data with citizens.
+            Everything you need to publish financial transparency in a format the
+            public can navigate.
           </p>
         </div>
 
@@ -113,30 +119,51 @@ export function Features() {
           {siteConfig.features.map((feature, index) => (
             <div
               key={index}
-              className="p-6 rounded-xl border border-slate-200 hover:border-accent-300 hover:shadow-lg transition-all duration-200"
+              className="bg-slate-50 rounded-xl p-8 hover:shadow-lg transition-shadow duration-200 border border-slate-200"
             >
-              <div className="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center text-accent-600 mb-4">
-                {iconMap[feature.icon] || iconMap.chart}
+              <div className="w-12 h-12 bg-accent-600 text-white rounded-lg flex items-center justify-center mb-6">
+                {iconMap[feature.icon]}
               </div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-2">
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">
                 {feature.title}
               </h3>
-              <p className="text-slate-600">{feature.description}</p>
+              <p className="text-slate-600 leading-relaxed">
+                {feature.description}
+              </p>
             </div>
           ))}
-          
-  {/* Flexibility Message */}
-  <div className="col-span-1 md:col-span-2 lg:col-span-3 text-center bg-accent-50 rounded-xl p-8 mt-8">
-    <h3 className="text-xl font-semibold text-slate-900 mb-3">
-      Flexible to Your Transparency Needs
-    </h3>
-    <p className="text-slate-600 max-w-2xl mx-auto">
-      We understand that every government has different transparency requirements and comfort levels. 
-      CiviPortal lets you toggle modules on and off to match your organization's specific needs. Share 
-      what you're ready to share, when you're ready to share it.
-    </p>
-  </div>
-</div>
+
+          {/* Flexibility Card */}
+          <div className="col-span-1 md:col-span-2 lg:col-span-3 text-center bg-accent-50 rounded-xl p-8 mt-8 border border-accent-100">
+            <h3 className="text-xl font-semibold text-slate-900 mb-3">
+              Start small. Expand when you&apos;re ready.
+            </h3>
+            <p className="text-slate-700 max-w-3xl mx-auto">
+              Not every organization is ready to publish everything on day one.
+              CiviPortal lets you enable only the modules you want—then expand
+              over time as your transparency program matures.
+            </p>
+
+            <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto text-left">
+              <div className="bg-white/80 rounded-lg p-5 border border-accent-100">
+                <p className="font-semibold text-slate-900 mb-1">
+                  Starter portal
+                </p>
+                <p className="text-slate-700 text-sm">
+                  Budget + Departments (add Transactions later)
+                </p>
+              </div>
+              <div className="bg-white/80 rounded-lg p-5 border border-accent-100">
+                <p className="font-semibold text-slate-900 mb-1">
+                  Full transparency portal
+                </p>
+                <p className="text-slate-700 text-sm">
+                  Budget + Actuals + Transactions + Revenues
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

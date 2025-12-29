@@ -1,100 +1,113 @@
 export const siteConfig = {
   name: "CiviPortal",
-  tagline: "Government Financial Transparency Platform",
+  tagline: "Financial Transparency Portal for Government",
   description:
-    "Empower citizens with access to your budget, spending, and financial data. Built for transparency, designed for clarity.",
+    "CiviPortal turns budgets, actuals, revenues, and transactions into a clear, searchable public portal—built with accessibility, privacy, and ease of administration in mind.",
   demoUrl: "https://sample-gov.civiportal.com/portal",
-  contactEmail: "info@civiportal.com",
+  schedulingUrl: "mailto:hello@civiportal.com?subject=CiviPortal%20Demo%20Request",
+  contactEmail: "hello@civiportal.com",
   features: [
     {
       title: "Budget Visualization",
       description:
-        "Interactive charts and graphs that make complex budget data easy to understand for every citizen.",
+        "Turn budget line items into charts residents can explore by department, category, and year—without needing a finance background.",
       icon: "chart",
     },
     {
-      title: "Transaction Tracking",
+      title: "Transaction Search",
       description:
-        "Access to local expenditures with powerful search and filtering capabilities.",
+        "Publish searchable expenditures with filters (vendor, department, amount, date) so answers are self-serve instead of manual.",
       icon: "search",
     },
     {
       title: "Department Breakdowns",
       description:
-        "Explore spending by department with drill-down capabilities and historical comparisons.",
+        "Give clear department-level context with drill-down views, comparisons, and consistent totals across the portal.",
       icon: "building",
     },
     {
       title: "Revenue Analysis",
       description:
-        "Understand where city/county funds come from with detailed revenue source breakdowns.",
+        "Show where funds come from with revenue source breakdowns and trends over time.",
       icon: "dollar",
     },
     {
       title: "Multi-Year Comparison",
       description:
-        "Track fiscal trends over time with side-by-side year comparisons and growth metrics.",
+        "Track fiscal trends year-over-year with side-by-side views designed for clarity, not spreadsheets.",
       icon: "calendar",
     },
     {
-      title: "Easy Data Upload",
+      title: "Admin Upload & Replace-Year",
       description:
-        "Simple admin tools let you and your staff upload and manage financial data without technical expertise.",
+        "Upload new files or replace a fiscal year cleanly—keeping the portal current without custom development.",
       icon: "upload",
     },
   ],
   benefits: [
     {
-      title: "Build Public Trust",
+      title: "Build trust with clarity",
       description:
-        "Transparency builds confidence. Give citizens direct access to see how their tax dollars are spent.",
+        "Provide a single place for residents to understand budgets and spending—organized, searchable, and consistent year to year.",
     },
     {
-      title: "Reduce FOIA Requests",
+      title: "Reduce repetitive requests",
       description:
-        "Self-service access to financial data means fewer formal requests and faster answers for everyone.",
+        "Designed to reduce back-and-forth emails and repetitive records requests by making common answers self-serve.",
     },
     {
-      title: "Meet Compliance Goals",
+      title: "Meet transparency expectations",
       description:
-        "Stay ahead of transparency mandates with a platform designed for public financial disclosure.",
+        "Built for public disclosure workflows: export → upload → publish, with accessibility and usability as first-class requirements.",
     },
     {
-      title: "Engage Your Community",
+      title: "Support better conversations",
       description:
-        "Informed citizens are engaged citizens. Foster meaningful participation in budget discussions.",
+        "Help residents show up to budget conversations informed—without forcing them to interpret raw financial documents.",
     },
   ],
   screenshots: [
     {
       src: "/screenshots/overview.png",
-      alt: "CiviPortal Overview Dashboard",
-      title: "Overview Dashboard",
+      alt: "Overview dashboard showing high-level financial transparency metrics",
+      title: "Citizen Overview",
+      description:
+        "A simple starting point for residents to explore budgets, spending, and revenue with clear navigation.",
     },
     {
       src: "/screenshots/budget.png",
-      alt: "Budget Breakdown View",
-      title: "Budget Analysis",
-    },
-    {
-      src: "/screenshots/revenues.png",
-      alt: "Revenue Sources Chart",
-      title: "Revenue Tracking",
+      alt: "Budget analysis charts and graphs for municipal finances",
+      title: "Budget Explorer",
+      description:
+        "Interactive charts that put context around budget totals and allow comparisons across years and categories.",
     },
     {
       src: "/screenshots/transactions.png",
-      alt: "Transaction Search Interface",
+      alt: "Searchable transaction tracking interface with filters and data table",
       title: "Transaction Search",
+      description:
+        "Powerful search and filters so residents can find spending details without submitting requests.",
     },
     {
       src: "/screenshots/departments.png",
-      alt: "Department Spending View",
-      title: "Department View",
+      alt: "Department spending breakdown view with drill-down analysis",
+      title: "Department Drill-Down",
+      description:
+        "Department totals and trends in a format that’s easy to follow—and easy to explain.",
+    },
+    {
+      src: "/screenshots/revenues.png",
+      alt: "Revenue analysis dashboard showing sources and trends",
+      title: "Revenue Trends",
+      description:
+        "Revenue breakdowns that make funding sources and changes over time understandable at a glance.",
     },
     {
       src: "/screenshots/admin-upload.png",
-      alt: "Admin Data Upload Interface",
-      title: "Easy Admin Tools",
+      alt: "Admin data upload interface for managing financial records",
+      title: "Admin Upload Tools",
+      description:
+        "Upload and replace-year controls designed for finance teams—not developers.",
     },
   ],
 };

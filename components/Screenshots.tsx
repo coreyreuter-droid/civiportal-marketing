@@ -16,71 +16,45 @@ export function Screenshots() {
             See CiviPortal in Action
           </h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            Explore the intuitive interface that makes financial data accessible
-            to everyone.
+            A quick tour of the citizen experience and the admin workflow.
           </p>
         </div>
 
         {/* Screenshot Display */}
-        <div className="space-y-8">
-          {/* Main Image */}
-          <div className="relative aspect-video bg-slate-100 rounded-xl overflow-hidden shadow-2xl">
+        <div className="max-w-5xl mx-auto">
+          <div className="relative w-full h-96 md:h-[500px] rounded-xl overflow-hidden shadow-xl border border-slate-200">
             <Image
               src={siteConfig.screenshots[activeIndex].src}
               alt={siteConfig.screenshots[activeIndex].alt}
               fill
               className="object-cover"
-              priority={activeIndex === 0}
+              priority
             />
-            {/* Fallback for missing images */}
-            <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-accent-500 to-accent-700 text-white">
-              <div className="text-center">
-                <svg
-                  className="w-16 h-16 mx-auto mb-4 opacity-50"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                  />
-                </svg>
-                <p className="text-lg font-medium">
-                  {siteConfig.screenshots[activeIndex].title}
-                </p>
-              </div>
-            </div>
           </div>
 
-          {/* Thumbnail Navigation */}
-          <div className="flex gap-4 overflow-x-auto pb-4">
-            {siteConfig.screenshots.map((screenshot, index) => (
-              <button
-                key={index}
-                onClick={() => setActiveIndex(index)}
-                className={`flex-shrink-0 relative w-32 h-20 rounded-lg overflow-hidden transition-all duration-200 ${
-                  index === activeIndex
-                    ? "ring-2 ring-accent-500 ring-offset-2"
-                    : "opacity-70 hover:opacity-100"
-                }`}
-              >
-                <Image
-                  src={screenshot.src}
-                  alt={screenshot.alt}
-                  fill
-                  className="object-cover"
-                />
-                {/* Fallback thumbnail */}
-                <div className="absolute inset-0 bg-gradient-to-br from-accent-400 to-accent-600 flex items-center justify-center">
-                  <span className="text-white text-xs font-medium text-center px-2">
-                    {screenshot.title}
-                  </span>
-                </div>
-              </button>
-            ))}
+          {/* Screenshot Navigation */}
+          <div className="mt-8 flex justify-center">
+            <div className="flex gap-3 overflow-x-auto pb-4">
+              {siteConfig.screenshots.map((screenshot, index) => (
+                <button
+                  key={index}
+                  onClick={() => setActiveIndex(index)}
+                  className={`flex-shrink-0 relative w-32 h-20 rounded-lg overflow-hidden transition-all duration-200 ${
+                    index === activeIndex
+                      ? "ring-2 ring-accent-500 ring-offset-2"
+                      : "opacity-70 hover:opacity-100"
+                  }`}
+                  aria-label={`View screenshot: ${screenshot.title}`}
+                >
+                  <Image
+                    src={screenshot.src}
+                    alt={screenshot.alt}
+                    fill
+                    className="object-cover"
+                  />
+                </button>
+              ))}
+            </div>
           </div>
 
           {/* Current Screenshot Title */}
@@ -88,6 +62,9 @@ export function Screenshots() {
             <h3 className="text-xl font-semibold text-slate-900">
               {siteConfig.screenshots[activeIndex].title}
             </h3>
+            <p className="mt-2 text-slate-600 max-w-2xl mx-auto">
+              {siteConfig.screenshots[activeIndex].description}
+            </p>
           </div>
         </div>
       </div>

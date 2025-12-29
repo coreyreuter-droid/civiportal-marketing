@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Header, Footer, Button } from "@/components";
+import { siteConfig } from "@/config";
 
 type FormData = {
   name: string;
@@ -18,6 +19,7 @@ type FormErrors = Partial<Record<keyof FormData, string>>;
 export default function DemoRequestPage() {
   const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState(false);
+
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -26,27 +28,20 @@ export default function DemoRequestPage() {
     phone: "",
     message: "",
   });
+
   const [errors, setErrors] = useState<FormErrors>({});
 
-  const validateForm = (): boolean => {
+  const validateForm = () => {
     const newErrors: FormErrors = {};
 
-    if (!formData.name.trim()) {
-      newErrors.name = "Name is required";
-    }
-
-    if (!formData.email.trim()) {
-      newErrors.email = "Email is required";
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = "Please enter a valid email address";
-    }
-
-    if (!formData.organization.trim()) {
+    if (!formData.name.trim()) newErrors.name = "Name is required";
+    if (!formData.email.trim()) newErrors.email = "Email is required";
+    if (!formData.organization.trim())
       newErrors.organization = "Organization is required";
-    }
+    if (!formData.role.trim()) newErrors.role = "Role is required";
 
-    if (!formData.role.trim()) {
-      newErrors.role = "Role is required";
+    if (formData.email && !/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = "Please enter a valid email";
     }
 
     setErrors(newErrors);
@@ -54,13 +49,11 @@ export default function DemoRequestPage() {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
-    // Clear error when user starts typing
+
     if (errors[name as keyof FormData]) {
       setErrors((prev) => ({ ...prev, [name]: undefined }));
     }
@@ -83,7 +76,7 @@ export default function DemoRequestPage() {
       if (response.ok) {
         router.push("/thank-you");
       } else {
-        throw new Error("Submission failed");
+        alert("There was an error submitting your request. Please try again.");
       }
     } catch {
       alert("There was an error submitting your request. Please try again.");
@@ -99,12 +92,28 @@ export default function DemoRequestPage() {
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Request a Demo
+              Book a Demo
             </h1>
             <p className="text-lg text-slate-600">
-              See how CiviPortal can transform financial transparency in your
-              government.
+              See a live portal, the admin upload flow, and how your exports map
+              into a clear public experience.
             </p>
+          </div>
+
+          <div className="bg-white rounded-xl shadow-sm p-6 mb-6 border border-slate-200">
+            <h2 className="text-lg font-semibold text-slate-900 mb-2">
+              Fastest option: book a 20-minute walkthrough
+            </h2>
+            <p className="text-slate-600 mb-4">
+              Want to move quickly? Use the link below. If you prefer email, you
+              can also submit the form and we’ll follow up.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Button href={siteConfig.schedulingUrl} variant="outline">
+                Schedule via email/calendar
+              </Button>
+              <Button href={siteConfig.demoUrl}>View the sample portal first</Button>
+            </div>
           </div>
 
           <form
@@ -117,10 +126,9 @@ export default function DemoRequestPage() {
                 htmlFor="name"
                 className="block text-sm font-medium text-slate-700 mb-1"
               >
-                Full Name <span className="text-red-500">*</span>
+                Full Name *
               </label>
               <input
-                type="text"
                 id="name"
                 name="name"
                 value={formData.name}
@@ -141,18 +149,18 @@ export default function DemoRequestPage() {
                 htmlFor="email"
                 className="block text-sm font-medium text-slate-700 mb-1"
               >
-                Email Address <span className="text-red-500">*</span>
+                Email Address *
               </label>
               <input
-                type="email"
                 id="email"
                 name="email"
+                type="email"
                 value={formData.email}
                 onChange={handleChange}
                 className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-accent-500 outline-none transition-colors ${
                   errors.email ? "border-red-500" : "border-slate-300"
                 }`}
-                placeholder="john@cityname.gov"
+                placeholder="john@city.gov"
               />
               {errors.email && (
                 <p className="mt-1 text-sm text-red-500">{errors.email}</p>
@@ -165,10 +173,9 @@ export default function DemoRequestPage() {
                 htmlFor="organization"
                 className="block text-sm font-medium text-slate-700 mb-1"
               >
-                Organization / Government <span className="text-red-500">*</span>
+                Organization *
               </label>
               <input
-                type="text"
                 id="organization"
                 name="organization"
                 value={formData.organization}
@@ -179,9 +186,7 @@ export default function DemoRequestPage() {
                 placeholder="City of Springfield"
               />
               {errors.organization && (
-                <p className="mt-1 text-sm text-red-500">
-                  {errors.organization}
-                </p>
+                <p className="mt-1 text-sm text-red-500">{errors.organization}</p>
               )}
             </div>
 
@@ -191,7 +196,7 @@ export default function DemoRequestPage() {
                 htmlFor="role"
                 className="block text-sm font-medium text-slate-700 mb-1"
               >
-                Your Role <span className="text-red-500">*</span>
+                Your Role *
               </label>
               <select
                 id="role"
@@ -203,28 +208,27 @@ export default function DemoRequestPage() {
                 }`}
               >
                 <option value="">Select your role</option>
-                <option value="city-manager">City Manager</option>
-                <option value="finance-director">Finance Director</option>
-                <option value="it-director">IT Director</option>
-                <option value="mayor">Mayor / Elected Official</option>
-                <option value="communications">Communications Director</option>
-                <option value="other">Other</option>
+                <option value="City Manager">City Manager</option>
+                <option value="Finance Director">Finance Director</option>
+                <option value="Budget Analyst">Budget Analyst</option>
+                <option value="IT Director">IT Director</option>
+                <option value="Elected Official">Elected Official</option>
+                <option value="Other">Other</option>
               </select>
               {errors.role && (
                 <p className="mt-1 text-sm text-red-500">{errors.role}</p>
               )}
             </div>
 
-            {/* Phone (optional) */}
+            {/* Phone */}
             <div>
               <label
                 htmlFor="phone"
                 className="block text-sm font-medium text-slate-700 mb-1"
               >
-                Phone Number <span className="text-slate-400">(optional)</span>
+                Phone Number (Optional)
               </label>
               <input
-                type="tel"
                 id="phone"
                 name="phone"
                 value={formData.phone}
@@ -234,13 +238,13 @@ export default function DemoRequestPage() {
               />
             </div>
 
-            {/* Message (optional) */}
+            {/* Message */}
             <div>
               <label
                 htmlFor="message"
                 className="block text-sm font-medium text-slate-700 mb-1"
               >
-                Message <span className="text-slate-400">(optional)</span>
+                Message (Optional)
               </label>
               <textarea
                 id="message"
@@ -249,7 +253,7 @@ export default function DemoRequestPage() {
                 onChange={handleChange}
                 rows={4}
                 className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-accent-500 focus:border-accent-500 outline-none transition-colors resize-none"
-                placeholder="Tell us about your transparency goals..."
+                placeholder="What system do you export from (Tyler, Munis, etc.) and which modules matter most (Budget, Transactions, Revenues)?"
               />
             </div>
 
@@ -260,11 +264,11 @@ export default function DemoRequestPage() {
               className="w-full"
               size="lg"
             >
-              {isSubmitting ? "Submitting..." : "Request Demo"}
+              {isSubmitting ? "Submitting..." : "Send request"}
             </Button>
 
             <p className="text-sm text-slate-500 text-center">
-              We&apos;ll respond within 1-2 business days.
+              We typically reply the same day.
             </p>
           </form>
         </div>
