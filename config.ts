@@ -4,7 +4,7 @@ export const siteConfig = {
   description:
     "Empower citizens with access to your budget, spending, and financial data. Built for transparency, designed for clarity.",
   demoUrl: "https://sample-gov.civiportal.com/portal",
-  contactEmail: "hello@civiportal.com",
+  contactEmail: "info@civiportal.com",
   features: [
     {
       title: "Budget Visualization",

@@ -100,18 +100,18 @@ export function Footer() {
             &copy; {currentYear} {siteConfig.name}. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <Link
-              href="/privacy"
-              className="text-sm text-slate-400 hover:text-white transition-colors"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              href="/accessibility"
-              className="text-sm text-slate-400 hover:text-white transition-colors"
-            >
-              Accessibility
-            </Link>
+  <Link href="/privacy" className="text-sm text-slate-400 hover:text-white transition-colors">
+    Privacy Policy
+  </Link>
+  <Link href="/terms" className="text-sm text-slate-400 hover:text-white transition-colors">
+    Terms of Service
+  </Link>
+  <Link href="/security" className="text-sm text-slate-400 hover:text-white transition-colors">
+    Security
+  </Link>
+  <Link href="/accessibility" className="text-sm text-slate-400 hover:text-white transition-colors">
+    Accessibility
+  </Link>
           </div>
         </div>
       </div>
