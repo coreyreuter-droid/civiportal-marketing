@@ -3,7 +3,7 @@ export const siteConfig = {
   tagline: "Government Financial Transparency Platform",
   description:
     "Empower citizens with access to your budget, spending, and financial data. Built for transparency, designed for clarity.",
-  demoUrl: "https://sample-gov.civiportal.com/paradise",
+  demoUrl: "https://sample-gov.civiportal.com/portal",
   contactEmail: "hello@civiportal.com",
   features: [
     {

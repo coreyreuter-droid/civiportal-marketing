@@ -10,8 +10,7 @@ export function Benefits() {
             Why Choose CiviPortal?
           </h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            Join forward-thinking governments that are leading the way in
-            financial transparency.
+            Built for forward-thinking governments ready to publish financial data clearly.
           </p>
         </div>
 
