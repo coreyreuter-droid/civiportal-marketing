@@ -38,9 +38,9 @@ export function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-<Button href={siteConfig.schedulingUrl} size="lg">
-  Book a 30-minute demo
-</Button>
+            <Button href="/contact" size="lg">
+              Book a 30-minute demo
+            </Button>
 
             <Button href={siteConfig.demoUrl} variant="outline" size="lg">
               View live sample portal

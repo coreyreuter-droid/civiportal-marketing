@@ -22,12 +22,12 @@ export function Screenshots() {
 
         {/* Screenshot Display */}
         <div className="max-w-5xl mx-auto">
-          <div className="relative w-full h-96 md:h-[500px] rounded-xl overflow-hidden shadow-xl border border-slate-200">
+          <div className="relative w-full h-96 md:h-[500px] rounded-xl overflow-hidden shadow-xl border border-slate-200 bg-slate-50">
             <Image
               src={siteConfig.screenshots[activeIndex].src}
               alt={siteConfig.screenshots[activeIndex].alt}
               fill
-              className="object-cover"
+              className="object-contain"
               priority
             />
           </div>

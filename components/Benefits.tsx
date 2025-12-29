@@ -27,7 +27,7 @@ const highlightItems = [
     title: "Implementation without custom dev",
     description:
       "Export → upload → publish. Keep your portal current without standing up a bespoke website.",
-    href: "/demo-request",
+    href: "/contact",
     cta: "Book a demo",
   },
 ];

@@ -102,7 +102,7 @@ export function HowItWorks() {
                 View sample portal
               </Link>
               <Link
-                href="/demo-request"
+                href="/contact"
                 className="inline-flex justify-center items-center rounded-lg px-4 py-2 bg-accent-600 text-white hover:bg-accent-700 transition-colors"
               >
                 Book a demo

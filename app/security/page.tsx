@@ -252,7 +252,7 @@ export default function SecurityPage() {
               <Button href={`mailto:${siteConfig.contactEmail}`} variant="primary">
                 Contact
               </Button>
-              <Button href="/demo-request" variant="outline">
+              <Button href="/contact" variant="outline">
                 Book demo
               </Button>
             </div>

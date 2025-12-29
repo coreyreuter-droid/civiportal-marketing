@@ -13,13 +13,13 @@ export function CTA() {
           and how your current exports map into the portal.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-<Button
-  href={siteConfig.schedulingUrl}
-  variant="secondary"
-  size="lg"
-  className="bg-white text-accent-600 hover:bg-slate-100"
->
-            Book a 30-minute demo
+          <Button
+            href="/contact"
+            variant="secondary"
+            size="lg"
+            className="bg-white text-accent-600 hover:bg-slate-100"
+          >
+            Request a demo
           </Button>
           <Button
             href={siteConfig.demoUrl}

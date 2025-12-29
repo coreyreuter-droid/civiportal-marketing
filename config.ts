@@ -4,7 +4,6 @@ export const siteConfig = {
   description:
     "CiviPortal turns budgets, actuals, revenues, and transactions into a clear, searchable public portal—built with accessibility, privacy, and ease of administration in mind.",
   demoUrl: "https://sample-gov.civiportal.com/portal",
-  schedulingUrl: "mailto:hello@civiportal.com?subject=CiviPortal%20Demo%20Request",
   contactEmail: "hello@civiportal.com",
   features: [
     {

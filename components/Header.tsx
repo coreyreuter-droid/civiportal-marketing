@@ -28,7 +28,7 @@ export function Header() {
               alt={siteConfig.name}
               width={160}
               height={40}
-              className="h-22 w-auto"
+              className="h-8 w-auto"
               priority
             />
           </Link>
@@ -51,9 +51,9 @@ export function Header() {
             <Button href={siteConfig.demoUrl} variant="outline" size="sm">
               View sample portal
             </Button>
-<Button href={siteConfig.schedulingUrl} size="sm">
-  Email to schedule
-</Button>
+            <Button href="/contact" size="sm">
+              Request a demo
+            </Button>
 
           </div>
 
@@ -114,13 +114,13 @@ export function Header() {
                 >
                   View sample portal
                 </Button>
-<Button
-  href={siteConfig.schedulingUrl}
-  size="sm"
-  onClick={() => setMobileMenuOpen(false)}
->
-  Email to schedule
-</Button>
+                <Button
+                  href="/contact"
+                  size="sm"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Request a demo
+                </Button>
 
               </div>
             </div>

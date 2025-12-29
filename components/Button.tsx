@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 
@@ -45,8 +46,22 @@ export function Button({
   } ${className}`;
 
   if (href) {
+    const handleLinkClick: React.MouseEventHandler<HTMLAnchorElement> = (e) => {
+      if (disabled) {
+        e.preventDefault();
+        return;
+      }
+      onClick?.();
+    };
+
     return (
-      <Link href={href} className={classes}>
+      <Link
+        href={href}
+        className={classes}
+        onClick={handleLinkClick}
+        aria-disabled={disabled ? true : undefined}
+        tabIndex={disabled ? -1 : undefined}
+      >
         {children}
       </Link>
     );

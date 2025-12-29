@@ -111,8 +111,8 @@ export default function DemoRequestPage() {
               submit the form below and we’ll follow up.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
-              <Button href={siteConfig.schedulingUrl} variant="outline">
-                Email to schedule
+              <Button href="/contact" variant="outline">
+                Book demo
               </Button>
               <Button href={siteConfig.demoUrl}>View the sample portal first</Button>
             </div>
