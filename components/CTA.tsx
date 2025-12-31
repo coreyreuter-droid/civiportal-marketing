@@ -19,7 +19,7 @@ export function CTA() {
             size="lg"
             className="bg-white text-accent-600 hover:bg-slate-100"
           >
-            Request a demo
+            Request a Demo
           </Button>
           <Button
             href={siteConfig.demoUrl}
@@ -27,7 +27,7 @@ export function CTA() {
             size="lg"
             className="border-white text-white hover:bg-accent-700"
           >
-            View live sample portal
+            View Live Sample Portal
           </Button>
         </div>
       </div>

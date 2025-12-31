@@ -89,12 +89,6 @@ export default function SecurityPage() {
                     <td className="px-6 py-4">DNS, caching, and protective controls</td>
                     <td className="px-6 py-4">Provider security/compliance documentation available</td>
                   </tr>
-                  <tr>
-                    <td className="px-6 py-4 font-medium">Email</td>
-                    <td className="px-6 py-4">Google Workspace</td>
-                    <td className="px-6 py-4">Business email</td>
-                    <td className="px-6 py-4">Provider security/compliance documentation available</td>
-                  </tr>
                 </tbody>
               </table>
             </div>

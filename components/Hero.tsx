@@ -3,8 +3,20 @@ import { Button } from "./Button";
 
 export function Hero() {
   return (
-    <section className="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-slate-50 to-accent-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-slate-50 to-accent-50 overflow-hidden">
+      {/* Background logo mark */}
+      <div 
+        className="absolute inset-0 flex items-center justify-center pointer-events-none"
+        aria-hidden="true"
+      >
+        <img
+          src="/brand/logo-mark.png"
+          alt=""
+          className="h-[80%] w-auto opacity-[0.15]"
+        />
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-4xl mx-auto">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-accent-100 text-accent-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -27,8 +39,8 @@ export function Hero() {
 
           {/* Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
-            Publish financial data the public can{" "}
-            <span className="text-accent-600">actually understand</span>
+            Publish financial data that the{" "}
+            <span className="text-accent-600">public understands</span>
           </h1>
 
           {/* Subheadline */}
@@ -39,11 +51,11 @@ export function Hero() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/demo-request" size="lg">
-              Book a 30-minute demo
+              Book a 30-Minute Demo
             </Button>
 
             <Button href={siteConfig.demoUrl} variant="outline" size="lg">
-              View live sample portal
+              View Live Sample Portal
             </Button>
           </div>
 
@@ -62,7 +74,7 @@ export function Hero() {
                   clipRule="evenodd"
                 />
               </svg>
-              <span className="text-sm font-medium">WCAG 2.1 AA target</span>
+              <span className="text-sm font-medium">WCAG 2.1 AA Target</span>
             </div>
 
             <div className="flex items-center gap-2">
@@ -78,7 +90,7 @@ export function Hero() {
                   clipRule="evenodd"
                 />
               </svg>
-              <span className="text-sm font-medium">Role-based admin access</span>
+              <span className="text-sm font-medium">Role-Based Admin Sccess</span>
             </div>
 
             <div className="flex items-center gap-2">
@@ -94,7 +106,7 @@ export function Hero() {
                   clipRule="evenodd"
                 />
               </svg>
-              <span className="text-sm font-medium">Replace-year uploads</span>
+              <span className="text-sm font-medium">Replace and Append Uploads</span>
             </div>
 
             <div className="flex items-center gap-2">
@@ -110,7 +122,7 @@ export function Hero() {
                   clipRule="evenodd"
                 />
               </svg>
-              <span className="text-sm font-medium">Hosted &amp; maintained</span>
+              <span className="text-sm font-medium">Hosted &amp; Maintained</span>
             </div>
           </div>
         </div>

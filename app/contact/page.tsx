@@ -12,7 +12,7 @@ export default function ContactPage() {
               Contact
             </h1>
             <p className="text-lg text-slate-600">
-              Questions, procurement requirements, or a security questionnaire—send it over.
+              Questions, procurement requirements, or a security questionnaire. Send it our way!
             </p>
           </div>
 
@@ -39,10 +39,10 @@ export default function ContactPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <Button href={siteConfig.demoUrl} variant="outline">
-                    View sample portal
+                    View Sample Portal
                   </Button>
                   <Button href="/demo-request">
-                    Book a demo
+                    Book a Demo
                   </Button>
                 </div>
               </div>

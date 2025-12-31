@@ -28,7 +28,7 @@ export function Header() {
               alt={siteConfig.name}
               width={160}
               height={40}
-              className="h-8 w-auto"
+              className="h-16 w-auto"
               priority
             />
           </Link>
@@ -49,10 +49,9 @@ export function Header() {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-4">
             <Button href={siteConfig.demoUrl} variant="outline" size="sm">
-              View sample portal
-            </Button>
+              View Sample Portal            </Button>
             <Button href="/demo-request" size="sm">
-              Request a demo
+              Request a Demo
             </Button>
 
           </div>
@@ -119,7 +118,7 @@ export function Header() {
                   size="sm"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Request a demo
+                  Request a Demo
                 </Button>
 
               </div>

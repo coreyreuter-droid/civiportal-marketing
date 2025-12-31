@@ -2,20 +2,20 @@ export const siteConfig = {
   name: "CiviPortal",
   tagline: "Financial Transparency Portal for Government",
   description:
-    "CiviPortal turns budgets, actuals, revenues, and transactions into a clear, searchable public portal—built with accessibility, privacy, and ease of administration in mind.",
+    "CiviPortal turns budgets, actuals, revenues, and transactions into a clear, searchable public portal. Built with accessibility, privacy, and ease of administration in mind.",
   demoUrl: "https://sample-gov.civiportal.com/portal",
   contactEmail: "hello@civiportal.com",
   features: [
     {
       title: "Budget Visualization",
       description:
-        "Turn budget line items into charts residents can explore by department, category, and year—without needing a finance background.",
+        "Turn budget line items into visualizations residents can explore by department, category, and year.",
       icon: "chart",
     },
     {
-      title: "Transaction Search",
+      title: "Public Downloads",
       description:
-        "Publish searchable expenditures with filters (vendor, department, amount, date) so answers are self-serve instead of manual.",
+        "Publish searchable data with filters (i.e. vendor, department, amount, date) so answers are self-serve instead of manual staff requests.",
       icon: "search",
     },
     {
@@ -37,9 +37,9 @@ export const siteConfig = {
       icon: "calendar",
     },
     {
-      title: "Admin Upload & Replace-Year",
+      title: "Admin Upload",
       description:
-        "Upload new files or replace a fiscal year cleanly—keeping the portal current without custom development.",
+        "Upload new files or replace a fiscal year cleanly. Keeping the portal current without custom development.",
       icon: "upload",
     },
   ],
@@ -47,7 +47,7 @@ export const siteConfig = {
     {
       title: "Build trust with clarity",
       description:
-        "Provide a single place for residents to understand budgets and spending—organized, searchable, and consistent year to year.",
+        "Provide a single place for residents to understand budgets and spending. Organized, searchable, and consistent year to year.",
     },
     {
       title: "Reduce repetitive requests",
@@ -62,7 +62,7 @@ export const siteConfig = {
     {
       title: "Support better conversations",
       description:
-        "Help residents show up to budget conversations informed—without forcing them to interpret raw financial documents.",
+        "Help residents show up to budget conversations informed, without forcing them to interpret raw financial documents.",
     },
   ],
   screenshots: [
@@ -114,7 +114,7 @@ export const siteConfig = {
       alt: "Admin data upload interface for managing financial records",
       title: "Admin Upload Tools",
       description:
-        "Upload and replace-year controls designed for finance teams—not developers.",
+        "Upload and replace data controls designed for finance teams—not developers.",
     },
   ],
 };

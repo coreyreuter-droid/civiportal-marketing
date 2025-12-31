@@ -28,7 +28,7 @@ const highlightItems = [
     description:
       "Export → upload → publish. Keep your portal current without standing up a bespoke website.",
     href: "/contact",
-    cta: "Book a demo",
+    cta: "Book a Demo",
   },
 ];
 
@@ -42,8 +42,7 @@ export function Benefits() {
             What this helps you do
           </h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            Practical outcomes for finance teams, leadership, and the public—
-            without marketing fluff.
+            Practical outcomes for finance teams, leadership, and the public.
           </p>
         </div>
 

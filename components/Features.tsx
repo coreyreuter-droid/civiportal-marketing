@@ -109,7 +109,7 @@ export function Features() {
             Product
           </h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            Everything you need to publish financial transparency in a format the
+            Financial transparency in a format the
             public can navigate.
           </p>
         </div>
@@ -136,18 +136,18 @@ export function Features() {
           {/* Flexibility Card */}
           <div className="col-span-1 md:col-span-2 lg:col-span-3 text-center bg-accent-50 rounded-xl p-8 mt-8 border border-accent-100">
             <h3 className="text-xl font-semibold text-slate-900 mb-3">
-              Start small. Expand when you&apos;re ready.
+              Start small. Expand when ready.
             </h3>
             <p className="text-slate-700 max-w-3xl mx-auto">
               Not every organization is ready to publish everything on day one.
-              CiviPortal lets you enable only the modules you want—then expand
+              CiviPortal lets you enable only the modules you want. Expand
               over time as your transparency program matures.
             </p>
 
             <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto text-left">
               <div className="bg-white/80 rounded-lg p-5 border border-accent-100">
                 <p className="font-semibold text-slate-900 mb-1">
-                  Starter portal
+                  Starter Portal
                 </p>
                 <p className="text-slate-700 text-sm">
                   Budget + Departments (add Transactions later)
@@ -155,7 +155,7 @@ export function Features() {
               </div>
               <div className="bg-white/80 rounded-lg p-5 border border-accent-100">
                 <p className="font-semibold text-slate-900 mb-1">
-                  Full transparency portal
+                  Full Transparency Portal
                 </p>
                 <p className="text-slate-700 text-sm">
                   Budget + Actuals + Transactions + Revenues

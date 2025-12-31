@@ -4,12 +4,10 @@ export function Personas() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-            Built for the people who actually run this
+            Clear, Accessible, Easy to Manage
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Different stakeholders care about different outcomes. CiviPortal is
-            designed to make finance teams faster, leadership more confident, and
-            IT less burdened.
+A citizen-friendly portal for budgets and spending, with an admin experience your team can manage in minutes.
           </p>
         </div>
 
@@ -20,7 +18,7 @@ export function Personas() {
             </h3>
             <ul className="space-y-3 text-slate-700">
               <li>• Publish without building one-off reports</li>
-              <li>• Replace-year uploads to keep data clean</li>
+              <li>• Replace and append uploads to keep data clean</li>
               <li>• Reduce repetitive “can you pull…” requests</li>
               <li>• Clear module toggles and guardrails</li>
             </ul>

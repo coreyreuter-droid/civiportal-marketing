@@ -156,14 +156,7 @@ export default function PrivacyPage() {
                         (e.g., SOC 2 / ISO) where applicable.
                       </td>
                     </tr>
-                    <tr>
-                      <td className="px-4 py-3">Google Workspace</td>
-                      <td className="px-4 py-3">Business email</td>
-                      <td className="px-4 py-3">
-                        Provider publishes third-party security/compliance reports
-                        where applicable.
-                      </td>
-                    </tr>
+
                   </tbody>
                 </table>
               </div>

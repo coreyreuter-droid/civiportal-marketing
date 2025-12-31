@@ -42,7 +42,7 @@ export default function ThankYouPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href={siteConfig.demoUrl} variant="primary">
-              View sample portal
+              View Sample Portal
             </Button>
             <Button href="/" variant="secondary">
               Back to Home

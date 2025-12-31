@@ -76,7 +76,7 @@ export default function AccessibilityPage() {
                 </h2>
                 <p className="text-slate-700 leading-relaxed">
                   We are targeting conformance with <strong>WCAG 2.1 Level AA</strong>.
-                  Accessibility is treated as a core requirement—especially for public-facing
+                  Accessibility is treated as a core requirement, especially for public-facing
                   government content.
                 </p>
               </section>

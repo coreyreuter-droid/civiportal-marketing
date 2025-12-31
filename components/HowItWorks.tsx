@@ -5,7 +5,7 @@ const steps = [
   {
     title: "Export from your finance system",
     description:
-      "Start with the same files you already produce—budgets, actuals, revenues, and/or transactions. (CSV templates can be mapped to common exports.)",
+      "Start with the same files you already produce: budgets, actuals, revenues, and/or transactions. (CSV templates can be mapped to common exports.)",
   },
   {
     title: "Upload or replace a fiscal year",
@@ -20,7 +20,7 @@ const steps = [
   {
     title: "Keep it current",
     description:
-      "Update the portal when your data updates—no custom development, no one-off reports, no fragile spreadsheets on the public website.",
+      "Update the portal when your data updates. No custom development, no one-off reports, no fragile spreadsheets on the public website.",
   },
 ];
 
@@ -64,7 +64,7 @@ export function HowItWorks() {
 
           <div className="rounded-xl border border-slate-200 p-8 bg-white">
             <h3 className="text-xl font-semibold text-slate-900 mb-3">
-              What you can publish
+              Publishing Capabilities 
             </h3>
             <p className="text-slate-600 mb-6">
               Start with one module and add more when you&apos;re ready. The goal
@@ -99,13 +99,13 @@ export function HowItWorks() {
                 href={siteConfig.demoUrl}
                 className="inline-flex justify-center items-center rounded-lg px-4 py-2 border-2 border-accent-600 text-accent-600 hover:bg-accent-50 transition-colors font-semibold"
               >
-                View sample portal
+                View Sample Portal
               </Link>
               <Link
                 href="/demo-request"
                 className="inline-flex justify-center items-center rounded-lg px-4 py-2 bg-accent-600 text-white hover:bg-accent-700 transition-colors font-semibold"
               >
-                Book a demo
+                Book a Demo
               </Link>
             </div>
 
