@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { siteConfig } from "@/config";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: `${siteConfig.name} - ${siteConfig.tagline}`,
@@ -33,7 +34,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
