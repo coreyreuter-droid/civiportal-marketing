@@ -22,7 +22,8 @@ export function Screenshots() {
 
         {/* Screenshot Display */}
         <div className="max-w-5xl mx-auto">
-          <<div className="relative w-full aspect-[16/10] rounded-xl overflow-hidden shadow-xl border border-slate-200 bg-slate-50">
+          <div className="relative w-full aspect-[16/10] rounded-xl overflow-hidden shadow-xl border border-slate-200 bg-slate-50">
+            <Image
               src={siteConfig.screenshots[activeIndex].src}
               alt={siteConfig.screenshots[activeIndex].alt}
               fill
