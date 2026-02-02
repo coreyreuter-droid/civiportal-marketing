@@ -7,6 +7,18 @@ import { siteConfig } from "@/config";
 export function Screenshots() {
   const [activeIndex, setActiveIndex] = useState(0);
 
+  const goToPrevious = () => {
+    setActiveIndex((prev) =>
+      prev === 0 ? siteConfig.screenshots.length - 1 : prev - 1
+    );
+  };
+
+  const goToNext = () => {
+    setActiveIndex((prev) =>
+      prev === siteConfig.screenshots.length - 1 ? 0 : prev + 1
+    );
+  };
+
   return (
     <section id="screenshots" className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,18 +34,68 @@ export function Screenshots() {
 
         {/* Screenshot Display */}
         <div className="max-w-5xl mx-auto">
-          <div className="relative w-full aspect-[16/10] rounded-xl overflow-hidden shadow-xl border border-slate-200 bg-slate-50">
-            <Image
-              src={siteConfig.screenshots[activeIndex].src}
-              alt={siteConfig.screenshots[activeIndex].alt}
-              fill
-              className="object-contain"
-              priority
-            />
+          <div className="relative">
+            {/* Left Arrow */}
+            <button
+              onClick={goToPrevious}
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-14 z-10 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg border border-slate-200 flex items-center justify-center hover:bg-slate-50 transition-colors"
+              aria-label="Previous screenshot"
+            >
+              <svg
+                className="w-5 h-5 md:w-6 md:h-6 text-slate-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+
+            {/* Screenshot Image */}
+            <div className="relative w-full aspect-[16/10] rounded-xl overflow-hidden shadow-xl border border-slate-200 bg-slate-50">
+              <Image
+                src={siteConfig.screenshots[activeIndex].src}
+                alt={siteConfig.screenshots[activeIndex].alt}
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+
+            {/* Right Arrow */}
+            <button
+              onClick={goToNext}
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-14 z-10 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg border border-slate-200 flex items-center justify-center hover:bg-slate-50 transition-colors"
+              aria-label="Next screenshot"
+            >
+              <svg
+                className="w-5 h-5 md:w-6 md:h-6 text-slate-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
           </div>
 
-          {/* Screenshot Navigation */}
-          <div className="mt-8 flex justify-center">
+          {/* Progress Indicator */}
+          <div className="mt-4 text-center text-sm text-slate-500">
+            {activeIndex + 1} of {siteConfig.screenshots.length}
+          </div>
+
+          {/* Screenshot Navigation Thumbnails */}
+          <div className="mt-6 flex justify-center">
             <div className="flex gap-3 overflow-x-auto pb-4">
               {siteConfig.screenshots.map((screenshot, index) => (
                 <button
