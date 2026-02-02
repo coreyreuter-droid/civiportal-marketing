@@ -22,8 +22,7 @@ export function Screenshots() {
 
         {/* Screenshot Display */}
         <div className="max-w-5xl mx-auto">
-          <div className="relative w-full h-96 md:h-[500px] rounded-xl overflow-hidden shadow-xl border border-slate-200 bg-slate-50">
-            <Image
+          <<div className="relative w-full aspect-[16/10] rounded-xl overflow-hidden shadow-xl border border-slate-200 bg-slate-50">
               src={siteConfig.screenshots[activeIndex].src}
               alt={siteConfig.screenshots[activeIndex].alt}
               fill
@@ -39,7 +38,7 @@ export function Screenshots() {
                 <button
                   key={index}
                   onClick={() => setActiveIndex(index)}
-                  className={`flex-shrink-0 relative w-32 h-20 rounded-lg overflow-hidden transition-all duration-200 ${
+                  className={`flex-shrink-0 relative w-40 h-24 rounded-lg overflow-hidden transition-all duration-200 ${
                     index === activeIndex
                       ? "ring-2 ring-accent-500 ring-offset-2"
                       : "opacity-70 hover:opacity-100"
