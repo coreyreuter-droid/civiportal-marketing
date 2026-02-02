@@ -12,7 +12,7 @@ export default function ContactPage() {
               Contact
             </h1>
             <p className="text-lg text-slate-600">
-              Questions, procurement requirements, or a security questionnaire. Send it our way!
+              Questions, procurement requirements, or a security questionnaire. Send it our way.
             </p>
           </div>
 
@@ -42,7 +42,7 @@ export default function ContactPage() {
                     View Sample Portal
                   </Button>
                   <Button href="/demo-request">
-                    Book a Demo
+                    Request A Demo
                   </Button>
                 </div>
               </div>

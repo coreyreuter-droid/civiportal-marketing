@@ -7,4 +7,5 @@ export { Features } from "./Features";
 export { HowItWorks } from "./HowItWorks";
 export { Benefits } from "./Benefits";
 export { Screenshots } from "./Screenshots";
+export { FAQ } from "./FAQ";
 export { CTA } from "./CTA";

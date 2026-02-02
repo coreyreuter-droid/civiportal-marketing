@@ -94,7 +94,7 @@ export default function DemoRequestPage() {
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Request a Demo
+              Request A Demo
             </h1>
             <p className="text-lg text-slate-600">
               See a live portal, the admin upload flow, and how your exports map
@@ -111,7 +111,7 @@ export default function DemoRequestPage() {
               fill out the form below.
             </p>
             <Button href={siteConfig.demoUrl} variant="outline">
-              View the sample portal first
+              View The Sample Portal
             </Button>
           </div>
 
@@ -264,7 +264,7 @@ export default function DemoRequestPage() {
               className="w-full"
               size="lg"
             >
-              {isSubmitting ? "Submitting..." : "Send request"}
+              {isSubmitting ? "Submitting..." : "Send Request"}
             </Button>
 
             <p className="text-sm text-slate-500 text-center">

@@ -7,6 +7,7 @@ import {
   HowItWorks,
   Benefits,
   Screenshots,
+  FAQ,
   CTA,
 } from "@/components";
 
@@ -21,6 +22,7 @@ export default function HomePage() {
         <HowItWorks />
         <Benefits />
         <Screenshots />
+        <FAQ />
         <CTA />
       </main>
       <Footer />

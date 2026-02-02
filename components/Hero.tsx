@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-slate-50 to-accent-50 overflow-hidden">
       {/* Background logo mark */}
-      <div 
+      <div
         className="absolute inset-0 flex items-center justify-center pointer-events-none"
         aria-hidden="true"
       >
@@ -34,28 +34,28 @@ export function Hero() {
                 d="M13 10V3L4 14h7v7l9-11h-7z"
               />
             </svg>
-            Built for public-sector finance teams
+            Public Transparency Portal
           </div>
 
           {/* Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
-            Publish financial data that the{" "}
-            <span className="text-accent-600">public understands</span>
+            A Public Transparency Portal For{" "}
+            <span className="text-accent-600">Budgets And Projects</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
-            {siteConfig.description}
+            CiviPortal provides a clear way for residents to view financial information and understand project progress, alongside your existing city website.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/demo-request" size="lg">
-              Book a 30-Minute Demo
+              Request A Demo
             </Button>
 
             <Button href={siteConfig.demoUrl} variant="outline" size="lg">
-              View Live Sample Portal
+              View Sample Portal
             </Button>
           </div>
 
@@ -74,7 +74,7 @@ export function Hero() {
                   clipRule="evenodd"
                 />
               </svg>
-              <span className="text-sm font-medium">WCAG 2.1 AA Target</span>
+              <span className="text-sm font-medium">Designed With Accessibility Best Practices In Mind</span>
             </div>
 
             <div className="flex items-center gap-2">
@@ -90,7 +90,7 @@ export function Hero() {
                   clipRule="evenodd"
                 />
               </svg>
-              <span className="text-sm font-medium">Role-Based Admin Sccess</span>
+              <span className="text-sm font-medium">Role Based Administrative Access</span>
             </div>
 
             <div className="flex items-center gap-2">
@@ -106,7 +106,7 @@ export function Hero() {
                   clipRule="evenodd"
                 />
               </svg>
-              <span className="text-sm font-medium">Replace and Append Uploads</span>
+              <span className="text-sm font-medium">Tenant Isolated Data</span>
             </div>
 
             <div className="flex items-center gap-2">
@@ -122,7 +122,7 @@ export function Hero() {
                   clipRule="evenodd"
                 />
               </svg>
-              <span className="text-sm font-medium">Hosted &amp; Maintained</span>
+              <span className="text-sm font-medium">Export Upload Publish Workflow</span>
             </div>
           </div>
         </div>

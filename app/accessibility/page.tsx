@@ -32,7 +32,7 @@ export default function AccessibilityPage() {
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 bg-accent-50 text-accent-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
               <span aria-hidden="true">♿</span>
-              Accessibility-first for public portals
+              Designed With Accessibility Best Practices In Mind
             </div>
 
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
@@ -49,20 +49,20 @@ export default function AccessibilityPage() {
           {/* Badge grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
             <div className="bg-slate-50 rounded-xl p-6 text-center">
-              <div className="text-2xl font-bold text-accent-600 mb-1">WCAG 2.1</div>
-              <div className="text-sm text-slate-600">AA conformance target</div>
-            </div>
-            <div className="bg-slate-50 rounded-xl p-6 text-center">
               <div className="text-2xl font-bold text-accent-600 mb-1">Keyboard</div>
               <div className="text-sm text-slate-600">Navigation supported</div>
             </div>
             <div className="bg-slate-50 rounded-xl p-6 text-center">
-              <div className="text-2xl font-bold text-accent-600 mb-1">Screen readers</div>
-              <div className="text-sm text-slate-600">Semantic structure + labels</div>
+              <div className="text-2xl font-bold text-accent-600 mb-1">Semantic</div>
+              <div className="text-sm text-slate-600">Structure and labels</div>
             </div>
             <div className="bg-slate-50 rounded-xl p-6 text-center">
-              <div className="text-2xl font-bold text-accent-600 mb-1">Support</div>
-              <div className="text-sm text-slate-600">Feedback channel available</div>
+              <div className="text-2xl font-bold text-accent-600 mb-1">Readable</div>
+              <div className="text-sm text-slate-600">Typography and contrast</div>
+            </div>
+            <div className="bg-slate-50 rounded-xl p-6 text-center">
+              <div className="text-2xl font-bold text-accent-600 mb-1">Feedback</div>
+              <div className="text-sm text-slate-600">Channel available</div>
             </div>
           </div>
 
@@ -72,45 +72,45 @@ export default function AccessibilityPage() {
             <div className="lg:col-span-2 space-y-8">
               <section className="rounded-xl border border-slate-200 bg-white p-8">
                 <h2 className="text-xl font-semibold text-slate-900 mb-3">
-                  Conformance target
+                  Our Approach
                 </h2>
                 <p className="text-slate-700 leading-relaxed">
-                  We are targeting conformance with <strong>WCAG 2.1 Level AA</strong>.
-                  Accessibility is treated as a core requirement, especially for public-facing
-                  government content.
+                  We design with accessibility best practices in mind for public facing
+                  government content. Accessibility is treated as a core consideration
+                  throughout development, and we continue to improve as the product evolves.
                 </p>
               </section>
 
               <section className="rounded-xl border border-slate-200 bg-white p-8">
                 <h2 className="text-xl font-semibold text-slate-900 mb-4">
-                  Accessibility practices
+                  Focus Areas
                 </h2>
                 <ul className="space-y-3">
                   <CheckItem>Keyboard navigable interfaces</CheckItem>
-                  <CheckItem>Screen reader-friendly structure and labels</CheckItem>
-                  <CheckItem>Color contrast and readable typography</CheckItem>
+                  <CheckItem>Semantic structure and labels for screen readers</CheckItem>
+                  <CheckItem>Readable typography and color contrast</CheckItem>
                   <CheckItem>Responsive layouts for mobile and desktop</CheckItem>
                 </ul>
               </section>
 
               <section className="rounded-xl border border-slate-200 bg-white p-8">
                 <h2 className="text-xl font-semibold text-slate-900 mb-3">
-                  Testing approach
+                  Testing Approach
                 </h2>
                 <p className="text-slate-700 leading-relaxed">
-                  We test critical user flows (navigation, filters, charts/tables) using
-                  keyboard-only interaction and screen reader checks during development.
+                  We test critical user flows (navigation, filters, charts and tables) using
+                  keyboard only interaction and screen reader checks during development.
                   We continue to improve as the product evolves.
                 </p>
               </section>
 
               <section className="rounded-xl border border-slate-200 bg-white p-8">
                 <h2 className="text-xl font-semibold text-slate-900 mb-3">
-                  Known limitations
+                  Known Limitations
                 </h2>
                 <p className="text-slate-700 leading-relaxed">
                   If you encounter an accessibility issue, we want to fix it. Some complex data
-                  visualizations can present unique challenges; we work to ensure equivalent access
+                  visualizations can present unique challenges. We work to ensure equivalent access
                   through labels, summaries, and structured data wherever possible.
                 </p>
               </section>
@@ -120,11 +120,11 @@ export default function AccessibilityPage() {
             <aside className="space-y-8">
               <section className="bg-accent-50 rounded-xl p-8 border border-accent-200">
                 <h2 className="text-xl font-semibold text-slate-900 mb-3">
-                  Accessibility feedback
+                  Accessibility Feedback
                 </h2>
                 <p className="text-slate-700 leading-relaxed mb-4">
-                  If something isn’t working for you, tell us. We’ll take it seriously and use
-                  your feedback to improve accessibility.
+                  If something is not working for you, tell us. We take accessibility
+                  feedback seriously and use it to improve.
                 </p>
 
                 <div className="rounded-lg bg-white/80 border border-accent-200 p-4">

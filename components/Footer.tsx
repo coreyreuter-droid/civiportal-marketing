@@ -68,10 +68,10 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/contact"
+                  href="/demo-request"
                   className="hover:text-white transition-colors"
                 >
-                  Request Demo
+                  Request A Demo
                 </Link>
               </li>
               <li>
@@ -79,7 +79,7 @@ export function Footer() {
                   href="/contact"
                   className="hover:text-white transition-colors"
                 >
-                  Contact Us
+                  Contact
                 </Link>
               </li>
               <li>

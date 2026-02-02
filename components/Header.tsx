@@ -8,7 +8,7 @@ import { Button } from "./Button";
 
 const navItems = [
   { href: "/#features", label: "Product" },
-  { href: "/#how-it-works", label: "How it works" },
+  { href: "/#how-it-works", label: "How It Works" },
   { href: "/security", label: "Security" },
   { href: "/accessibility", label: "Accessibility" },
   { href: "/contact", label: "Contact" },
@@ -111,7 +111,7 @@ export function Header() {
                   size="sm"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  View sample portal
+                  View Sample Portal
                 </Button>
                 <Button
                   href="/demo-request"

@@ -3,24 +3,29 @@ import { siteConfig } from "@/config";
 
 const steps = [
   {
-    title: "Export from your finance system",
+    title: "Link From Your Existing Website",
     description:
-      "Start with the same files you already produce: budgets, actuals, revenues, and/or transactions. (CSV templates can be mapped to common exports.)",
+      "Add a link from your Finance or Transparency page to CiviPortal. Your primary website stays the same.",
   },
   {
-    title: "Upload or replace a fiscal year",
+    title: "Export From Your Finance System",
+    description:
+      "Start with the same files you already produce: budgets, actuals, revenues, and transactions. CSV templates can be mapped to common exports.",
+  },
+  {
+    title: "Upload Or Replace A Fiscal Year",
     description:
       "Admins can upload new data or replace a specific year cleanly, keeping the portal accurate without technical work.",
   },
   {
-    title: "Publish the modules you choose",
+    title: "Publish The Modules You Choose",
     description:
-      "Enable only what you want public today (Budget, Transactions, Departments, Revenues) and expand over time.",
+      "Enable only what you want public today (Budget, Transactions, Departments, Revenues, Projects) and expand over time.",
   },
   {
-    title: "Keep it current",
+    title: "Update On Your Schedule",
     description:
-      "Update the portal when your data updates. No custom development, no one-off reports, no fragile spreadsheets on the public website.",
+      "Update the portal when your data updates. No custom development, no one off reports, no fragile spreadsheets on the public website.",
   },
 ];
 
@@ -30,11 +35,10 @@ export function HowItWorks() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-            How it works
+            How It Works
           </h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            A workflow designed for government finance teams: export → upload →
-            publish.
+            A workflow designed for government finance teams. Export. Upload. Publish.
           </p>
         </div>
 
@@ -64,17 +68,17 @@ export function HowItWorks() {
 
           <div className="rounded-xl border border-slate-200 p-8 bg-white">
             <h3 className="text-xl font-semibold text-slate-900 mb-3">
-              Publishing Capabilities 
+              Publishing Capabilities
             </h3>
             <p className="text-slate-600 mb-6">
-              Start with one module and add more when you&apos;re ready. The goal
+              Start with one module and add more when you are ready. The goal
               is clarity for residents and lower maintenance for staff.
             </p>
 
             <ul className="space-y-3 text-slate-700">
               <li className="flex gap-2">
                 <span className="text-accent-700 font-semibold">•</span> Budget
-                summaries and drill-downs
+                summaries and drill downs
               </li>
               <li className="flex gap-2">
                 <span className="text-accent-700 font-semibold">•</span> Actuals
@@ -92,6 +96,10 @@ export function HowItWorks() {
                 <span className="text-accent-700 font-semibold">•</span> Department
                 views for context
               </li>
+              <li className="flex gap-2">
+                <span className="text-accent-700 font-semibold">•</span> Project
+                status and updates
+              </li>
             </ul>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
@@ -105,7 +113,7 @@ export function HowItWorks() {
                 href="/demo-request"
                 className="inline-flex justify-center items-center rounded-lg px-4 py-2 bg-accent-600 text-white hover:bg-accent-700 transition-colors font-semibold"
               >
-                Book a Demo
+                Request A Demo
               </Link>
             </div>
 

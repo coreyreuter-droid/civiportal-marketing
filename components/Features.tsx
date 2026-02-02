@@ -106,11 +106,10 @@ export function Features() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-            Product
+            Portal Capabilities
           </h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            Financial transparency in a format the
-            public can navigate.
+            Publish financial and project transparency in a format residents can navigate.
           </p>
         </div>
 
@@ -136,7 +135,7 @@ export function Features() {
           {/* Flexibility Card */}
           <div className="col-span-1 md:col-span-2 lg:col-span-3 text-center bg-accent-50 rounded-xl p-8 mt-8 border border-accent-100">
             <h3 className="text-xl font-semibold text-slate-900 mb-3">
-              Start small. Expand when ready.
+              Start With Core Financials. Expand Over Time.
             </h3>
             <p className="text-slate-700 max-w-3xl mx-auto">
               Not every organization is ready to publish everything on day one.
@@ -147,18 +146,18 @@ export function Features() {
             <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto text-left">
               <div className="bg-white/80 rounded-lg p-5 border border-accent-100">
                 <p className="font-semibold text-slate-900 mb-1">
-                  Starter Portal
+                  Core Portal
                 </p>
                 <p className="text-slate-700 text-sm">
-                  Budget + Departments (add Transactions later)
+                  Budget And Actuals, Department Views
                 </p>
               </div>
               <div className="bg-white/80 rounded-lg p-5 border border-accent-100">
                 <p className="font-semibold text-slate-900 mb-1">
-                  Full Transparency Portal
+                  Expanded Portal
                 </p>
                 <p className="text-slate-700 text-sm">
-                  Budget + Actuals + Transactions + Revenues
+                  Budgets, Actuals, Revenues, Spending Detail, Projects (Optional)
                 </p>
               </div>
             </div>

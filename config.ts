@@ -1,106 +1,105 @@
 export const siteConfig = {
   name: "CiviPortal",
-  tagline: "Financial Transparency Portal for Government",
+  tagline: "Public Transparency Portal For Budgets And Projects",
   description:
-    "CiviPortal turns budgets, actuals, revenues, and transactions into a clear, searchable public portal. Built with accessibility, privacy, and ease of administration in mind.",
+    "CiviPortal provides a clear way for residents to view financial information and understand project progress alongside your existing city website.",
   demoUrl: "https://sample-gov.civiportal.com/portal",
   contactEmail: "hello@civiportal.com",
   features: [
     {
-      title: "Budget Visualization",
+      title: "Budget And Actuals Views",
       description:
-        "Turn budget line items into visualizations residents can explore by department, category, and year.",
+        "Present budgets and actuals by department, fund, and category in a consistent public format.",
       icon: "chart",
     },
     {
-      title: "Public Downloads",
+      title: "Spending Detail (Optional)",
       description:
-        "Publish searchable data with filters (i.e. vendor, department, amount, date) so answers are self-serve instead of manual staff requests.",
+        "Publish vendor and transaction detail when and if you choose, with filters for common questions.",
       icon: "search",
     },
     {
-      title: "Department Breakdowns",
+      title: "Revenue Summaries",
       description:
-        "Give clear department-level context with drill-down views, comparisons, and consistent totals across the portal.",
-      icon: "building",
-    },
-    {
-      title: "Revenue Analysis",
-      description:
-        "Show where funds come from with revenue source breakdowns and trends over time.",
+        "Show revenue sources and trends over time in a resident friendly format.",
       icon: "dollar",
     },
     {
-      title: "Multi-Year Comparison",
+      title: "Project Transparency (Optional)",
       description:
-        "Track fiscal trends year-over-year with side-by-side views designed for clarity, not spreadsheets.",
+        "Share project status, narrative updates, and photos, or link out to existing project pages.",
+      icon: "building",
+    },
+    {
+      title: "Publishing Controls",
+      description:
+        "Enable only the modules you want public today and expand over time.",
       icon: "calendar",
     },
     {
-      title: "Admin Upload",
+      title: "Administrative Uploads",
       description:
-        "Upload new files or replace a fiscal year cleanly. Keeping the portal current without custom development.",
+        "Export, upload, publish. Designed for repeatable updates without custom development.",
       icon: "upload",
     },
   ],
   benefits: [
     {
-      title: "Build trust with clarity",
+      title: "Build Trust With Clear Information",
       description:
-        "Provide a single place for residents to understand budgets and spending. Organized, searchable, and consistent year to year.",
+        "Present budgets, spending, and project progress in a consistent public format.",
     },
     {
-      title: "Reduce repetitive requests",
+      title: "Keep Residents In The Know",
       description:
-        "Designed to reduce back-and-forth emails and repetitive records requests by making common answers self-serve.",
+        "Provide a single destination for financial and project updates, linked from your city website.",
     },
     {
-      title: "Meet transparency expectations",
+      title: "Reduce Repetitive Requests",
       description:
-        "Built for public disclosure workflows: export → upload → publish, with accessibility and usability as first-class requirements.",
+        "Help residents find answers without staff time spent responding to common questions.",
     },
     {
-      title: "Support better conversations",
+      title: "Support Better Budget Conversations",
       description:
-        "Help residents show up to budget conversations informed, without forcing them to interpret raw financial documents.",
+        "Make budget information easier to understand for council, staff, and the public.",
     },
   ],
   screenshots: [
-   {
-  src: "/screenshots/home.png",
-  alt: "Citizen portal home page showing navigation and overview content",
-  title: "Portal Home",
-  description:
-    "The citizen landing page—clear navigation into budgets, spending, departments, and revenue.",
-},
-
+    {
+      src: "/screenshots/home.png",
+      alt: "Citizen portal home page showing navigation and overview content",
+      title: "Portal Home",
+      description:
+        "The resident landing page with clear navigation into budgets, spending, departments, revenue, and projects.",
+    },
     {
       src: "/screenshots/overview.png",
       alt: "Overview dashboard showing high-level financial transparency metrics",
       title: "Citizen Overview",
       description:
-        "A simple starting point for residents to explore budgets, spending, and revenue with clear navigation.",
+        "A starting point for residents to explore budgets, spending, revenue, and project updates.",
     },
     {
       src: "/screenshots/budget.png",
       alt: "Budget analysis charts and graphs for municipal finances",
       title: "Budget Explorer",
       description:
-        "Interactive charts that put context around budget totals and allow comparisons across years and categories.",
+        "Interactive charts that provide context around budget totals and allow comparisons across years and categories.",
     },
     {
       src: "/screenshots/transactions.png",
       alt: "Searchable transaction tracking interface with filters and data table",
       title: "Transaction Search",
       description:
-        "Powerful search and filters so residents can find spending details without submitting requests.",
+        "Search and filters so residents can find spending details without submitting requests.",
     },
     {
       src: "/screenshots/departments.png",
       alt: "Department spending breakdown view with drill-down analysis",
-      title: "Department Drill-Down",
+      title: "Department Drill Down",
       description:
-        "Department totals and trends in a format that’s easy to follow—and easy to explain.",
+        "Department totals and trends in a format that is easy to follow and easy to explain.",
     },
     {
       src: "/screenshots/revenues.png",
@@ -114,7 +113,7 @@ export const siteConfig = {
       alt: "Admin data upload interface for managing financial records",
       title: "Admin Upload Tools",
       description:
-        "Upload and replace data controls designed for finance teams—not developers.",
+        "Upload and replace data controls designed for finance teams, not developers.",
     },
   ],
 };
