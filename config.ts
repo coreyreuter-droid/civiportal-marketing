@@ -65,7 +65,7 @@ export const siteConfig = {
         "Make budget information easier to understand for the public.",
     },
   ],
-  screenshots: [
+screenshots: [
     {
       src: "/screenshots/home.png",
       alt: "Citizen portal home page showing navigation and overview content",
@@ -76,7 +76,7 @@ export const siteConfig = {
     {
       src: "/screenshots/overview.png",
       alt: "Overview dashboard showing high-level financial transparency metrics",
-      title: "Citizen Overview",
+      title: "Financial Overview",
       description:
         "A starting point for residents to explore budgets, spending, revenue, and project updates.",
     },
@@ -95,6 +95,13 @@ export const siteConfig = {
         "Search and filters so residents can find spending details without submitting requests.",
     },
     {
+      src: "/screenshots/vendors.png",
+      alt: "Vendor spending summary with totals and transaction counts",
+      title: "Vendor Summary",
+      description:
+        "See spending by vendor with totals, transaction counts, and drill down capability.",
+    },
+    {
       src: "/screenshots/departments.png",
       alt: "Department spending breakdown view with drill-down analysis",
       title: "Department Drill Down",
@@ -109,11 +116,32 @@ export const siteConfig = {
         "Revenue breakdowns that make funding sources and changes over time understandable at a glance.",
     },
     {
-      src: "/screenshots/admin-upload.png",
-      alt: "Admin data upload interface for managing financial records",
-      title: "Admin Upload Tools",
+      src: "/screenshots/projects.png",
+      alt: "Project transparency page showing capital project status and updates",
+      title: "Project Updates",
       description:
-        "Upload and replace data controls designed for finance teams, not developers.",
+        "Share project status, narrative updates, and photos with residents.",
+    },
+    {
+      src: "/screenshots/analytics.png",
+      alt: "Portal analytics showing visitor engagement metrics",
+      title: "Portal Analytics",
+      description:
+        "Track portal engagement to understand what residents are viewing.",
+    },
+    {
+      src: "/screenshots/download.png",
+      alt: "Data download interface for public records",
+      title: "Data Downloads",
+      description:
+        "Let residents download data directly, reducing manual records requests.",
+    },
+    {
+      src: "/screenshots/admin-upload.png",
+      alt: "Admin interface showing branding settings and module controls",
+      title: "Admin Controls",
+      description:
+        "Configure portal branding and turn modules on or off as your transparency program evolves.",
     },
   ],
 };
