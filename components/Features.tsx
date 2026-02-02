@@ -139,8 +139,8 @@ export function Features() {
             </h3>
             <p className="text-slate-700 max-w-3xl mx-auto">
               Not every organization is ready to publish everything on day one.
-              CiviPortal lets you enable only the modules you want. Expand
-              over time as your transparency program matures.
+              CiviPortal lets you enable only the site modules you want. Expand on your own
+              as your transparency program matures.
             </p>
 
             <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto text-left">
@@ -154,10 +154,10 @@ export function Features() {
               </div>
               <div className="bg-white/80 rounded-lg p-5 border border-accent-100">
                 <p className="font-semibold text-slate-900 mb-1">
-                  Expanded Portal
+                  Portal Modules 
                 </p>
                 <p className="text-slate-700 text-sm">
-                  Budgets, Actuals, Revenues, Spending Detail, Projects (Optional)
+                  Budgets, Actuals, Revenues, Spending Detail, Projects
                 </p>
               </div>
             </div>

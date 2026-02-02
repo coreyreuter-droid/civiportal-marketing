@@ -40,7 +40,7 @@ export function Hero() {
           {/* Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
             A Public Transparency Portal For{" "}
-            <span className="text-accent-600">Budgets And Projects</span>
+            <span className="text-accent-600">Financials And Projects</span>
           </h1>
 
           {/* Subheadline */}

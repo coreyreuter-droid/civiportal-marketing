@@ -20,7 +20,7 @@ export function Personas() {
               <li>• Publish without building one off reports</li>
               <li>• Replace and append uploads to keep data clean</li>
               <li>• Reduce repetitive records requests</li>
-              <li>• Clear module toggles and guardrails</li>
+              <li>• CSV mapping for easy repeat file uploads</li>
             </ul>
           </div>
 
@@ -29,10 +29,10 @@ export function Personas() {
               City Manager And Executive Leadership
             </h3>
             <ul className="space-y-3 text-slate-700">
-              <li>• A single public place for budgets and project progress</li>
-              <li>• Better informed budget conversations</li>
-              <li>• Fewer misinformation cycles</li>
-              <li>• A modern portal that builds credibility</li>
+              <li>• A single public place for financials and project progress</li>
+              <li>• Affordable for all cities and counties</li>
+              <li>• Better informed citizens</li>
+              <li>• Modern portal that builds public credibility</li>
             </ul>
           </div>
 
@@ -41,10 +41,9 @@ export function Personas() {
               IT And Security Review
             </h3>
             <ul className="space-y-3 text-slate-700">
-              <li>• No custom development to keep the portal current</li>
+              <li>• No custom development or hosting</li>
               <li>• Role based administrative access</li>
               <li>• Security focused data handling approach</li>
-              <li>• Clear documentation for procurement</li>
             </ul>
           </div>
         </div>

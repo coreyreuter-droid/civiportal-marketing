@@ -10,17 +10,17 @@ const steps = [
   {
     title: "Export From Your Finance System",
     description:
-      "Start with the same files you already produce: budgets, actuals, revenues, and transactions. CSV templates can be mapped to common exports.",
+      "Start with the same files you already produce: budgets, actuals, revenues, and transactions. CSV templates can be mapped to your exports.",
   },
   {
-    title: "Upload Or Replace A Fiscal Year",
+    title: "Upload, Replace, or Delete A Fiscal Year",
     description:
-      "Admins can upload new data or replace a specific year cleanly, keeping the portal accurate without technical work.",
+      "Admins can upload new data, replace a specific year cleanly, or delete fiscal years esily, keeping the portal accurate without technical work.",
   },
   {
     title: "Publish The Modules You Choose",
     description:
-      "Enable only what you want public today (Budget, Transactions, Departments, Revenues, Projects) and expand over time.",
+      "Enable only what you want public today and expand over time.",
   },
   {
     title: "Update On Your Schedule",
@@ -82,11 +82,11 @@ export function HowItWorks() {
               </li>
               <li className="flex gap-2">
                 <span className="text-accent-700 font-semibold">•</span> Actuals
-                (where available) and comparisons
+                and comparisons
               </li>
               <li className="flex gap-2">
                 <span className="text-accent-700 font-semibold">•</span> Searchable
-                transactions with filters
+                data with data filtering
               </li>
               <li className="flex gap-2">
                 <span className="text-accent-700 font-semibold">•</span> Revenues
@@ -99,6 +99,11 @@ export function HowItWorks() {
               <li className="flex gap-2">
                 <span className="text-accent-700 font-semibold">•</span> Project
                 status and updates
+              </li>
+              
+              <li className="flex gap-2">
+                <span className="text-accent-700 font-semibold">•</span> Self-service
+                data exports for citizens
               </li>
             </ul>
 

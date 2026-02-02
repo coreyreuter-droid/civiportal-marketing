@@ -24,7 +24,7 @@ const highlightItems = [
     cta: "Security & data overview",
   },
   {
-    title: "Implementation without custom dev",
+    title: "Implementation without custom development",
     description:
       "Export → upload → publish. Keep your portal current without standing up a bespoke website.",
     href: "/contact",

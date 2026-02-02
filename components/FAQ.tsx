@@ -11,7 +11,7 @@ const faqs = [
   {
     question: "How often do we need to upload data?",
     answer:
-      "There is no required schedule. Many cities publish annual or quarterly updates. You can update monthly if desired.",
+      "There is no required schedule. Many cities publish annual or quarterly updates. You can update  or weekly if desired.",
   },
   {
     question: "Can we start without transactions and vendor detail?",
@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Can projects link to existing pages instead of duplicating updates?",
     answer:
-      "Yes. Projects can link to your existing project pages. If you prefer, projects can also be hosted in CiviPortal.",
+      "Yes. The Projects tab can route visitors to your existing project pages. If you prefer, CiviPortal can also host project pages with updates, maps, and completion schedules to make capital projects easier to understand.",
   },
   {
     question: "What does IT typically need for review?",

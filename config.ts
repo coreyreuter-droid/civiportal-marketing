@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "CiviPortal",
-  tagline: "Public Transparency Portal For Budgets And Projects",
+  tagline: "Public Transparency Portal For Financal Data And Capital Projects",
   description:
     "CiviPortal provides a clear way for residents to view financial information and understand project progress alongside your existing city website.",
   demoUrl: "https://sample-gov.civiportal.com/portal",
@@ -13,7 +13,7 @@ export const siteConfig = {
       icon: "chart",
     },
     {
-      title: "Spending Detail (Optional)",
+      title: "Spending Detail",
       description:
         "Publish vendor and transaction detail when and if you choose, with filters for common questions.",
       icon: "search",
@@ -25,7 +25,7 @@ export const siteConfig = {
       icon: "dollar",
     },
     {
-      title: "Project Transparency (Optional)",
+      title: "Project Transparency",
       description:
         "Share project status, narrative updates, and photos, or link out to existing project pages.",
       icon: "building",
@@ -47,7 +47,7 @@ export const siteConfig = {
     {
       title: "Build Trust With Clear Information",
       description:
-        "Present budgets, spending, and project progress in a consistent public format.",
+        "Present budgets, spending, and project progress in a consistent public format that citizens can navigate.",
     },
     {
       title: "Keep Residents In The Know",
@@ -62,7 +62,7 @@ export const siteConfig = {
     {
       title: "Support Better Budget Conversations",
       description:
-        "Make budget information easier to understand for council, staff, and the public.",
+        "Make budget information easier to understand for the public.",
     },
   ],
   screenshots: [
